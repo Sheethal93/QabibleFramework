@@ -1,0 +1,19 @@
+<suite name="My_Test_Suite" parallel = "tests" thread-count = "2"> <!-- parallel testing-->
+
+	<test name="Chrome_Test">
+		<parameter name="browser" value="chrome"></parameter>
+
+		<classes>
+			<class name="Test_Cases.Login_Testcase"></class>
+		</classes>
+	</test>
+
+	<test name="Safari_Test">
+		<parameter name="browser" value="safari"></parameter>
+		<classes>
+			<class name="Test_Cases.Login_Testcase"></class>
+		</classes>
+	</test>
+
+
+</suite>

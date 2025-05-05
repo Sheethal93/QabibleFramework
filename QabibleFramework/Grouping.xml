@@ -1,0 +1,16 @@
+<suite name="My_Test_Suite" > 
+	<groups>
+		<run>
+			<include name="Critical"></include>  <!-- created a group -->
+			<include name="High"></include>
+		</run>
+	</groups>
+	<test name="Chrome_Test">
+		<classes>
+			<class name="Test_Cases.Clients_Testcase"></class>
+		</classes>
+	</test>
+
+
+</suite>
+	
