@@ -50,10 +50,7 @@ public class General_Utilities {
 		return elementSelected;
 	}
 	
-	public void waitForElementVisible(WebDriver driver, WebElement element, int timeoutInSeconds) {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
-	    wait.until(ExpectedConditions.visibilityOf(element));
-	}
+	
 	
 	public void javascriptClick(WebDriver driver, WebElement element) {
 	    JavascriptExecutor js = (JavascriptExecutor) driver;

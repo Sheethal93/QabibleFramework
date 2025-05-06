@@ -15,18 +15,16 @@ public class Worker_page {
 		PageFactory.initElements(driver, this);
 		
 	}
-	@FindBy(xpath="//a[@href='/payrollapp/worker/index']")
-	WebElement workersButton;
+	
 	
 	@FindBy(xpath="//a[@href='/payrollapp/worker/create']")
 	WebElement createWorkerButton;
 	
-	public void clickWorkersButton() {
-		workersButton.click();
-	}
 	
-	public void clickCreateWorkerButton(){
+	
+	public CreateWorkers_page clickCreateWorkerButton(){
 		createWorkerButton.click();
+		return new CreateWorkers_page(driver);
 	}
 	
 	

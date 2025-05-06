@@ -18,8 +18,7 @@ public class Client_page {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//a[@href='/payrollapp/client/index']")
-	WebElement clientsButton;
+	
 
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement searchButtton;
@@ -30,9 +29,7 @@ public class Client_page {
 	@FindBy(id="client-require_po")
 	WebElement requirePoCheckbox;
 
-	public void clickClientsButton() {
-		clientsButton.click();
-	}
+	
 
 	public String getTextofClientsButton() {
 		return gu.getTextOfWebElements(searchButtton);

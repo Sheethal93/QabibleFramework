@@ -21,11 +21,29 @@ public class Home_page {
 
 	@FindBy(xpath = "//p[text()='Welcome to Payroll Application']")
 	WebElement welcomeLabelText;
+	
+	@FindBy(xpath = "//a[@href='/payrollapp/client/index']")
+	WebElement clientsButton;
+	
+	@FindBy(xpath="//a[@href='/payrollapp/worker/index']")
+	WebElement workersButton;
 
 	public String getTextWelcomeLabel() {
 
 		return gu.getTextOfWebElements(welcomeLabelText);
 
 	}
+	public Client_page clickClientsButton() {
+		clientsButton.click();
+		return new Client_page(driver);
+	}
+	
+	public Worker_page clickWorkersButton() {
+		workersButton.click();
+		return new Worker_page(driver);
+		
+	}
+	
+	
 
 }

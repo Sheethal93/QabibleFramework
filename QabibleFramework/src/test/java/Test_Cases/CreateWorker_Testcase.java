@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import base.Base_Class;
 import element_Repository.CreateWorkers_page;
+import element_Repository.Home_page;
 import element_Repository.Login_Page;
 import element_Repository.Worker_page;
 
@@ -17,15 +18,17 @@ public class CreateWorker_Testcase extends Base_Class {
 	  Login_Page lp=new Login_Page(driver);
 	  lp.input_Username("Carol");
 	  lp.input_Password("1q2w3e4r");
-	  lp.click_Login();
+	//  lp.click_Login();
 	  
-	  Worker_page wp=new Worker_page(driver);
-	  wp.clickWorkersButton();
-	  wp.clickCreateWorkerButton();
+	  Home_page hp=lp.click_Login();
+	  
+	  Worker_page wp=hp.clickWorkersButton();  //page chaining concept
+	 // wp.clickWorkersButton();
+	 // wp.clickCreateWorkerButton();
 	  
 	  
 	  
-	  CreateWorkers_page cwp=new CreateWorkers_page(driver);
+	  CreateWorkers_page cwp=wp.clickCreateWorkerButton();
 	  cwp.clickTitleDropdown();
 	 String actualSelectedValue= cwp.getValueofDropdown();
 	 String expectedSelectedValue="Mrs";

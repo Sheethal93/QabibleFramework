@@ -37,9 +37,12 @@ WebDriver driver;
 		password.sendKeys(pasword1);
 	}
 
-	public void click_Login() 
+	public Home_page click_Login() 
 	{
 		loginButton.click();
+		
+		return new Home_page(driver);
+		
 	}
 
 }
