@@ -45,7 +45,8 @@ public class Client_page {
 	public void clickRequirePoCheckbox() {
 	//	gu.waitForElementVisible(driver, requirePoCheckbox, 1000);
 		gu.scrollToElement(driver, requirePoCheckbox);
-		gu.clickAnElement(requirePoCheckbox);
+	//	gu.clickAnElement(requirePoCheckbox);
+		gu.javascriptClick(driver, requirePoCheckbox);
 	
 	}
 	

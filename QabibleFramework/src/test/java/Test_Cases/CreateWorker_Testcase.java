@@ -12,7 +12,7 @@ import element_Repository.Worker_page;
 
 public class CreateWorker_Testcase extends Base_Class {
 	
-  @Test
+  @Test(groups = "Critical")
   public void verifyTheSelectedValuesInCreateWorkerPage() {
 	  
 	  Login_Page lp=new Login_Page(driver);

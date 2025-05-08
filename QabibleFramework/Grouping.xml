@@ -1,13 +1,14 @@
 <suite name="My_Test_Suite" > 
 	<groups>
 		<run>
-			<include name="Critical"></include>  <!-- created a group -->
+		 	<include name="Critical"></include>     <!-- created a group -->  
 			<include name="High"></include>
 		</run>
 	</groups>
 	<test name="Chrome_Test">
+	<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="Test_Cases.Clients_Testcase"></class>
+			<class name="Test_Cases.Login_Testcase"></class>
 		</classes>
 	</test>
 

@@ -46,6 +46,7 @@ public class Clients_Testcase extends Base_Class {
 	  cp.clickCreateClientButton();
 	  cp.clickRequirePoCheckbox();
 	  
+	  
 	  Assert.assertEquals(cp.isclickRequirePoCheckboxSelected(), true);
   }
 }

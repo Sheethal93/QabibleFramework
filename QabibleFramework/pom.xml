@@ -76,7 +76,7 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>ExtendReport.xml</suiteXmlFile>   <!-- add
+						<suiteXmlFile>Grouping.xml</suiteXmlFile>   <!-- add
 						xml file to run -->
 					</suiteXmlFiles>
 				</configuration>
